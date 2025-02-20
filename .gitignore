@@ -1,4 +1,4 @@
 node_modules
-karabiner.json
-
 automatic_backups/
+karabiner.json
+package-lock.json

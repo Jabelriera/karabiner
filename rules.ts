@@ -57,65 +57,69 @@ const rules: KarabinerRules[] = [
   },
   ...createHyperSubLayers({
     spacebar: open(
-      "raycast://extensions/stellate/mxstbr-commands/create-notion-todo"
+      "raycast://extensions/HenriChabrand/notion/create-database-page"
     ),
-    // b = "B"rowse
+    // b = Browse
     b: {
-      t: open("https://twitter.com"),
-      // Quarterly "P"lan
-      p: open("https://mxstbr.com/cal"),
-      y: open("https://news.ycombinator.com"),
-      f: open("https://facebook.com"),
-      r: open("https://reddit.com"),
-      h: open("https://hashnode.com/draft"),
+
+      spacebar: open("https://pdpaola.com"),
+      l: open("https://pdpaola.cloud.looker.com"),
+      m: open("https://mail.google.com"),
+      x: open("https://x.com"),
+
     },
+
+    // j = Jira
+    j: {
+
+      spacebar: open("raycast://extensions/thomaslombart/jira/my-filters"),
+
+      // All ITPs
+      a: open("https://pdpaola.atlassian.net/jira/polaris/projects/ITP/ideas/view/3404380"),
+      // Support Tickets
+      s: open("https://pdpaola.atlassian.net/jira/servicedesk/projects/IT/queues/custom/163"),
+      // Developement
+      d: open("https://pdpaola.atlassian.net/jira/discovery/share/views/699ad107-2f28-4bf6-a78b-51008adfeecc"),
+
+      // Ordered from left to right (Q, W, E), the three Jira Software IT projects
+      q: /*  BAB  */ open("https://pdpaola.atlassian.net/jira/software/c/projects/BAB/boards/44"),
+      w: /*  COM  */ open("https://pdpaola.atlassian.net/jira/software/c/projects/COM/boards/46"),
+      e: /*  DAT  */ open("https://pdpaola.atlassian.net/jira/software/c/projects/DAT/boards/45"),
+
+      x: open("raycast://quicklink?name=View Ticket"),
+    },
+
     // o = "Open" applications
-    o: {
-      1: app("1Password"),
-      g: app("Google Chrome"),
+    a: {
+      b: app("Brave Browser"),
       c: app("Notion Calendar"),
-      v: app("Zed"),
       d: app("Discord"),
-      s: app("Slack"),
-      e: app("Superhuman"),
-      n: app("Notion"),
-      t: app("Terminal"),
-      // Open todo list managed via *H*ypersonic
-      h: open(
-        "notion://www.notion.so/stellatehq/7b33b924746647499d906c55f89d5026"
-      ),
-      z: app("zoom.us"),
-      // "M"arkdown (Reflect.app)
-      m: app("Reflect"),
-      r: app("Reflect"),
       f: app("Finder"),
-      // "i"Message
-      i: app("Texts"),
-      p: app("Spotify"),
-      a: app("iA Presenter"),
-      // "W"hatsApp has been replaced by Texts
-      w: open("Texts"),
-      l: open(
-        "raycast://extensions/stellate/mxstbr-commands/open-mxs-is-shortlink"
-      ),
+      m: app("Music"),
+      n: app("Notion"),
+      1: app("1Password"),
+      s: app("Slack"),
+      t: app("Terminal"),
+      w: app("Whatsapp"),
     },
 
-    // TODO: This doesn't quite work yet.
-    // l = "Layouts" via Raycast's custom window management
-    // l: {
-    //   // Coding layout
-    //   c: shell`
-    //     open -a "Visual Studio Code.app"
-    //     sleep 0.2
-    //     open -g "raycast://customWindowManagementCommand?position=topLeft&relativeWidth=0.5"
+    // n = Notion
+    n: {
 
-    //     open -a "Terminal.app"
-    //     sleep 0.2
-    //     open -g "raycast://customWindowManagementCommand?position=topRight&relativeWidth=0.5"
-    //   `,
-    // },
+      spacebar: open("notion://www.notion.so/jriera/Follow-up-Dpts-cc2d07d307174663aeee0192029d4ee5?pvs=4"),
 
-    // w = "Window" via rectangle.app
+      q: /*  BAB  */ open("notion://www.notion.so/jriera/Babylon-5286b76c5f814b5e80018c9c2f1746e5?pvs=25"),
+      w: /*  COM  */ open("notion://www.notion.so/jriera/Ecommerce-4d14585900d14482a6663b38e24c1460?pvs=25"),
+      e: /*  DAT  */ open("notion://www.notion.so/jriera/Data-9b10c993633f4932a95742f484e96a5d?pvs=25"),
+      r: /*  SYS  */ open("notion://www.notion.so/jriera/Sysadmin-4afef3fe2fdb4e58ad32d0bfe6c06195?pvs=25"),
+
+      a: /*  CEO  */ open("notion://www.notion.so/jriera/Humbert-421761737c744a8e95065153c18fed63?pvs=4"),
+      s: /* TODOs */ open("notion://www.notion.so/jriera/19e9bb54bc0380d7bf9ee11350cc13d7?v=19e9bb54bc0380c4899d000c6d019498&pvs=4"),
+
+    },
+
+    // w = "Window" via rectangle.app IT-5514
+    /*
     w: {
       semicolon: {
         description: "Window: Hide",
@@ -126,13 +130,6 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
-      y: rectangle("previous-display"),
-      o: rectangle("next-display"),
-      k: rectangle("top-half"),
-      j: rectangle("bottom-half"),
-      h: rectangle("left-half"),
-      l: rectangle("right-half"),
-      f: rectangle("maximize"),
       u: {
         description: "Window: Previous Tab",
         to: [
@@ -179,7 +176,10 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
-    },
+      f: {
+        to: [{ shell_command: "osascript -e 'tell application \"System Events\" to keystroke \"f\" using {command down, control down}'" }],
+      },
+    },*/
 
     // s = "System"
     s: {
@@ -233,15 +233,13 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
-      e: open(
-        `raycast://extensions/thomas/elgato-key-light/toggle?launchType=background`
-      ),
+
       // "D"o not disturb toggle
       d: open(
-        `raycast://extensions/yakitrak/do-not-disturb/toggle?launchType=background`
+        "raycast://extensions/yakitrak/do-not-disturb/toggle?launchType=background"
       ),
       // "T"heme
-      t: open(`raycast://extensions/raycast/system/toggle-system-appearance`),
+      t: open("raycast://extensions/raycast/system/toggle-system-appearance"),
       c: open("raycast://extensions/raycast/system/open-camera"),
       // 'v'oice
       v: {
@@ -287,6 +285,9 @@ const rules: KarabinerRules[] = [
       i: {
         to: [{ key_code: "page_up" }],
       },
+      f: {
+        to: [{ shell_command: "osascript -e 'tell application \"System Events\" to keystroke \"f\" using {command down, control down}'" }],
+      },
     },
 
     // c = Musi*c* which isn't "m" because we want it to be on the left hand
@@ -305,51 +306,25 @@ const rules: KarabinerRules[] = [
     // r = "Raycast"
     r: {
       c: open("raycast://extensions/thomas/color-picker/pick-color"),
-      n: open("raycast://script-commands/dismiss-notifications"),
-      l: open(
-        "raycast://extensions/stellate/mxstbr-commands/create-mxs-is-shortlink"
-      ),
-      e: open(
-        "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
-      ),
+      g: open("raycast://extensions/josephschmitt/gif-search/search"),
+      e: open("raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"),
       p: open("raycast://extensions/raycast/raycast/confetti"),
       a: open("raycast://extensions/raycast/raycast-ai/ai-chat"),
+      h: open("raycast://extensions/raycast/clipboard-history/clipboard-history"),
+
       s: open("raycast://extensions/peduarte/silent-mention/index"),
-      h: open(
-        "raycast://extensions/raycast/clipboard-history/clipboard-history"
-      ),
+
+      n: open("raycast://script-commands/dismiss-notifications"),
+
       1: open(
         "raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-1"
       ),
       2: open(
         "raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-2"
       ),
+
     },
   }),
-  {
-    description: "Change Backspace to Spacebar when Minecraft is focused",
-    manipulators: [
-      {
-        type: "basic",
-        from: {
-          key_code: "delete_or_backspace",
-        },
-        to: [
-          {
-            key_code: "spacebar",
-          },
-        ],
-        conditions: [
-          {
-            type: "frontmost_application_if",
-            file_paths: [
-              "^/Users/mxstbr/Library/Application Support/minecraft/runtime/java-runtime-gamma/mac-os-arm64/java-runtime-gamma/jre.bundle/Contents/Home/bin/java$",
-            ],
-          },
-        ],
-      },
-    ],
-  },
 ];
 
 fs.writeFileSync(
@@ -357,11 +332,18 @@ fs.writeFileSync(
   JSON.stringify(
     {
       global: {
-        show_in_menu_bar: false,
+        show_in_menu_bar: true,
+        keyboard_type: "iso"
       },
       profiles: [
         {
           name: "Default",
+          keyboard_type: "iso",
+          selected: true,
+          virtual_hid_keyboard: {
+            country_code: 0,
+            keyboard_type_v2: "iso"
+          },
           complex_modifications: {
             rules,
           },

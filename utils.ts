@@ -198,7 +198,7 @@ export function rectangle(name: string): LayerCommand {
   return {
     to: [
       {
-        shell_command: `open -g rectangle://execute-action?name=${name}`,
+        shell_command: `open -g rectangle-pro://execute-action?name=${name}`,
       },
     ],
     description: `Window: ${name}`,
