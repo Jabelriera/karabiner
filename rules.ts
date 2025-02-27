@@ -271,7 +271,9 @@ const rules: KarabinerRules[] = [
     // ---------------------------------------------------------------- //
 
     w: {
-      semicolon: {
+
+      // Hide Application
+      h: {
         description: "Window: Hide",
         to: [
           {
@@ -280,55 +282,112 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
-      u: {
-        description: "Window: Previous Tab",
-        to: [
-          {
-            key_code: "tab",
-            modifiers: ["right_control", "right_shift"],
-          },
-        ],
+
+      // Tabs
+       q:{
+        right_arrow: {
+          description: "Window: Previous Tab",
+          to: [
+            {
+              key_code: "tab",
+              modifiers: ["right_control", "right_shift"],
+            },
+          ],
+        },
+        left_arrow: {
+          description: "Window: Next Tab",
+          to: [
+            {
+              key_code: "tab",
+              modifiers: ["right_control"],
+            },
+          ],
+        },
       },
-      i: {
-        description: "Window: Next Tab",
-        to: [
-          {
-            key_code: "tab",
-            modifiers: ["right_control"],
-          },
-        ],
-      },
-      n: {
+      
+      // Next Window from the same Application
+      spacebar: {
         description: "Window: Next Window",
         to: [
           {
-            key_code: "grave_accent_and_tilde",
-            modifiers: ["right_command"],
+            key_code: "down_arrow",
+            modifiers: ["left_control"],
           },
         ],
       },
-      b: {
-        description: "Window: Back",
+      
+      // Spaces
+      s: {
+        right_arrow: { to: [{ key_code: "p", modifiers: ["left_control","left_option","left_command"] }] },
+        left_arrow: { to: [{ key_code: "o", modifiers: ["left_control","left_option","left_command"] }] },
+      },
+
+      // Displays
+      d: {
+        right_arrow: { to: [{ key_code: "i", modifiers: ["left_control","left_option","left_command"] }] },
+        left_arrow: { to: [{ key_code: "u", modifiers: ["left_control","left_option","left_command"] }] },
+      },
+      
+      // Elastic width
+      e: {
+        right_arrow: { to: [{ key_code: "b", modifiers: ["left_control","left_option","left_command"] }] },
+        left_arrow: { to: [{ key_code: "v", modifiers: ["left_control","left_option","left_command"] }] },
+      },
+
+      // Half Display
+      up_arrow: {
+        description: "Top Half (1/2, 1/3, 2/3)",
         to: [
           {
-            key_code: "open_bracket",
-            modifiers: ["right_command"],
+            key_code: "m",
+            modifiers: ["left_control","left_option","left_command"],
           },
         ],
       },
-      // Note: No literal connection. Both f and n are already taken.
-      m: {
-        description: "Window: Forward",
+
+      down_arrow: {
+        description: "Bottom Half (1/2, 1/3, 2/3)",
         to: [
           {
-            key_code: "close_bracket",
-            modifiers: ["right_command"],
+            key_code: "n",
+            modifiers: ["left_control","left_option","left_command"],
           },
         ],
       },
-      f: {
-        to: [{ shell_command: "osascript -e 'tell application \"System Events\" to keystroke \"f\" using {command down, control down}'" }],
+
+      right_arrow: {
+        description: "Half Right (1/2, 1/3, 2/3)",
+        to: [
+          {
+            key_code: "period",
+            modifiers: ["left_control","left_option","left_command"],
+          },
+        ],
       },
+
+      left_arrow: {
+        description: "Half Left (1/2, 1/3, 2/3)",
+        to: [
+          {
+            key_code: "comma",
+            modifiers: ["left_control","left_option","left_command"],
+          },
+        ],
+      },
+
+
+      // Corners
+      /*
+      up_arrow: {
+        left_arrow: { to: [{ key_code: "t", modifiers: ["left_control","left_option","left_command"] }] },
+        right_arrow: { to: [{ key_code: "y", modifiers: ["left_control","left_option","left_command"] }] },
+      },
+      down_arrow: {
+        left_arrow: { to: [{ key_code: "g", modifiers: ["left_control","left_option","left_command"] }] },
+        right_arrow: { to: [{ key_code: "h", modifiers: ["left_control","left_option","left_command"] }] },
+      },
+      */
+
     },
 
     // ---------------------------------------------------------------- //
@@ -389,67 +448,6 @@ const rules: KarabinerRules[] = [
       },
     },
 
-    // v = "moVe" which isn't "m" because we want it to be on the left hand
-    // so that hjkl work like the
-    // y do in vim
-    v: {
-      h: {
-        to: [{
-          key_code: "left_arrow"
-        }],
-      },
-      j: {
-        to: [{
-          key_code: "down_arrow"
-        }],
-      },
-      k: {
-        to: [{
-          key_code: "up_arrow"
-        }],
-      },
-      l: {
-        to: [{
-          key_code: "right_arrow"
-        }],
-      },
-      // Magicmove via homerow.app
-      m: {
-        to: [{
-          key_code: "f",
-          modifiers: ["right_control"]
-        }],
-        // TODO: Trigger Vim Easymotion when VSCode is focused
-      },
-      // Scroll mode via homerow.app
-      s: {
-        to: [{
-          key_code: "j",
-          modifiers: ["right_control"]
-        }],
-      },
-      d: {
-        to: [{
-          key_code: "d",
-          modifiers: ["right_shift", "right_command"]
-        }],
-      },
-      u: {
-        to: [{
-          key_code: "page_down"
-        }],
-      },
-      i: {
-        to: [{
-          key_code: "page_up"
-        }],
-      },
-      f: {
-        to: [{
-          shell_command: "osascript -e 'tell application \"System Events\" to keystroke \"f\" using {command down, control down}'"
-        }],
-      },
-    },
 
     // c = Musi*c* which isn't "m" because we want it to be on the left hand
     c: {
