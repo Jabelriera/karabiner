@@ -132,6 +132,26 @@ const rules: KarabinerRules[] = [
       ],
     },
 
+    left_arrow: {
+      description: "Switch to the previous Space",
+      to: [
+        {
+          key_code: "left_arrow",
+          modifiers: ["left_control"],
+        },
+      ],
+    },
+
+    right_arrow: {
+      description: "Switch to the next Space",
+      to: [
+        {
+          key_code: "right_arrow",
+          modifiers: ["left_control"],
+        },
+      ],
+    }, 
+
     // ---------------------------------------------------------------- //
     // B = Brave / Browse
     // ---------------------------------------------------------------- //
