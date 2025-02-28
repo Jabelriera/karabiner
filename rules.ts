@@ -122,15 +122,9 @@ const rules: KarabinerRules[] = [
       //      },
     ],
   },
+  
   ...createHyperSubLayers({
-    spacebar: {
-      to: [
-        {
-          key_code: "p",
-          modifiers: ["left_command", "left_control"],
-        },
-      ],
-    },
+    spacebar: open("notion://www.notion.so/jriera/Jabel-s-Keyboard-Shortcuts-1a89bb54bc03807baef5eff5543e4e2d"),
 
     left_arrow: {
       description: "Switch to the previous Space",

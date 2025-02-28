@@ -1,50 +1,52 @@
-# Guía de Atajos de Teclado
+# Keyboard Shortcuts Guide
 
 ## SPACEBAR
-| Tecla     | Descripción            | Atajo                    |
-|-----------|------------------------|--------------------------|
-| SPACEBAR  | Quick Action           | ⌘⌃ + P                  |
+| Key       | Description                 | Shortcut                |
+|-----------|-----------------------------|-------------------------|
+| SPACEBAR  | Quick Action                | ⌘⌃ + P                  |
+| ←         | Previous Space              | ⌃ + ←                   |
+| →         | Next Space                  | ⌃ + →                   |
 
 ## B → Brave/Browse
-| Tecla     | Descripción                  | Atajo                    |
-|-----------|------------------------------|--------------------------|
-| SPACEBAR  | Abrir PD Paola              | pdpaola.com             |
-| L         | Abrir Looker                | pdpaola.cloud.looker.com|
-| M         | Abrir Gmail                 | mail.google.com         |
-| X         | Abrir X (Twitter)           | x.com                   |
+| Key       | Description                 | Shortcut                |
+|-----------|-----------------------------|-------------------------|
+| SPACEBAR  | Open PD Paola               | pdpaola.com             |
+| L         | Open Looker                 | pdpaola.cloud.looker.com|
+| M         | Open Gmail                  | mail.google.com         |
+| X         | Open X (Twitter)            | x.com                   |
 
 ## J → Jira
-| Tecla     | Descripción                  | Atajo                    |
-|-----------|------------------------------|--------------------------|
-| SPACEBAR  | Mis Filtros                 | Raycast Jira Filters    |
+| Key       | Description                 | Shortcut                |
+|-----------|-----------------------------|-------------------------|
+| SPACEBAR  | My Filters                  | Raycast Jira Filters    |
 | A         | All ITPs                    | ITP Board               |
 | S         | Support Tickets             | IT Service Desk         |
 | D         | Development                 | Discovery View          |
-| Q         | BAB Board                   | BAB Jira Board         |
-| W         | COM Board                   | COM Jira Board         |
-| E         | DAT Board                   | DAT Jira Board         |
-| V         | Ver Ticket                  | ⌘⌥ + V                  |
+| Q         | BAB Board                   | BAB Jira Board          |
+| W         | COM Board                   | COM Jira Board          |
+| E         | DAT Board                   | DAT Jira Board          |
+| V         | View Ticket                 | ⌘⌥ + V                  |
 
 ## A → Applications
-| Tecla     | Descripción                  | Atajo                    |
-|-----------|------------------------------|--------------------------|
-| SPACEBAR  | Cambiar Aplicación          | ⌘⌥ + Tab                |
-| B         | Brave Browser               | Abrir Brave             |
-| C         | Notion Calendar             | Abrir Calendar          |
-| D         | Discord                     | Abrir Discord           |
-| F         | Finder                      | Abrir Finder            |
-| M         | Music                       | Abrir Music             |
-| N         | Notion                      | Abrir Notion            |
-| 1         | 1Password                   | Abrir 1Password         |
-| S         | Slack                       | Abrir Slack             |
-| T         | Terminal                    | Abrir Terminal          |
-| V         | Cursor                      | Abrir Cursor            |
-| W         | WhatsApp                    | Abrir WhatsApp          |
+| Key       | Description                  | Shortcut               |
+|-----------|------------------------------|------------------------|
+| SPACEBAR  | Switch Applications         | ⌘⌥ + Tab                |
+| B         | Brave Browser               | Open Brave              |
+| C         | Notion Calendar             | Open Calendar           |
+| D         | Discord                     | Open Discord            |
+| F         | Finder                      | Open Finder             |
+| M         | Music                       | Open Music              |
+| N         | Notion                      | Open Notion             |
+| 1         | 1Password                   | Open 1Password          |
+| S         | Slack                       | Open Slack              |
+| T         | Terminal                    | Open Terminal           |
+| V         | Cursor                      | Open Cursor             |
+| W         | WhatsApp                    | Open WhatsApp           |
 | I         | Quick Action                | ⌃⌘ + I                  |
 
 ## N → Notion
-| Tecla     | Descripción                  | Atajo                    |
-|-----------|------------------------------|--------------------------|
+| Key       | Description                  | Shortcut               |
+|-----------|------------------------------|------------------------|
 | Q         | BAB                         | Babylon Page            |
 | W         | COM                         | Ecommerce Page          |
 | E         | DAT                         | Data Page               |
@@ -52,59 +54,59 @@
 | A         | CEO                         | CEO Page                |
 | S         | TODOs                       | TODOs Page              |
 | D         | Dashboard                   | Control Center          |
-| I         | Add to To Do List          | ⌘⌥ + I                  |
+| I         | Add to To Do List           | ⌘⌥ + I                  |
 | O         | Add to Read Later           | ⌘⌥ + O                  |
-| K         | Add to To Do List          | ⌘⌥ + K                  |
+| K         | Add to To Do List           | ⌘⌥ + K                  |
 | L         | Add to Read Later           | ⌘⌥ + L                  |
 
 ## W → Windows Management
-| Tecla     | Descripción                  | Atajo                    |
-|-----------|------------------------------|--------------------------|
-| H         | Ocultar Aplicación          | ⌘ + H                   |
-| F         | Pantalla Completa           | ⌃⌥ + F                  |
-| Q + ←     | Pestaña Anterior            | ⌃⇧ + Tab                |
-| Q + →     | Pestaña Siguiente           | ⌃ + Tab                 |
-| SPACEBAR  | Siguiente Ventana           | ⌃ + ↓                   |
-| S + →     | Espacio Siguiente           | ⌃⌥⌘ + P                 |
-| S + ←     | Espacio Anterior            | ⌃⌥⌘ + O                 |
-| D + →     | Pantalla Siguiente          | ⌃⌥⌘ + I                 |
-| D + ←     | Pantalla Anterior           | ⌃⌥⌘ + U                 |
-| E + →     | Ancho Elástico (Derecha)    | ⌃⌥⌘ + B                 |
-| E + ←     | Ancho Elástico (Izquierda)  | ⌃⌥⌘ + V                 |
-| ↑         | Mitad Superior              | ⌃⌥⌘ + M                 |
-| ↓         | Mitad Inferior              | ⌃⌥⌘ + N                 |
-| →         | Mitad Derecha               | ⌃⌥⌘ + .                 |
-| ←         | Mitad Izquierda             | ⌃⌥⌘ + ,                 |
+| Key       | Description                 | Shortcut                |
+|-----------|-----------------------------|-------------------------|
+| H         | Hide Application            | ⌘ + H                   |
+| F         | Full Screen                 | ⌃⌥ + F                  |
+| Q + ←     | Previous Tab                | ⌃⇧ + Tab                |
+| Q + →     | Next Tab                    | ⌃ + Tab                 |
+| SPACEBAR  | Next Window                 | ⌃ + ↓                   |
+| S + →     | Next Space                  | ⌃⌥⌘ + P                 |
+| S + ←     | Previous Space              | ⌃⌥⌘ + O                 |
+| D + →     | Next Display                | ⌃⌥⌘ + I                 |
+| D + ←     | Previous Display            | ⌃⌥⌘ + U                 |
+| E + →     | Elastic Width (Right)       | ⌃⌥⌘ + B                 |
+| E + ←     | Elastic Width (Left)        | ⌃⌥⌘ + V                 |
+| ↑         | Top Half                    | ⌃⌥⌘ + M                 |
+| ↓         | Bottom Half                 | ⌃⌥⌘ + N                 |
+| →         | Right Half                  | ⌃⌥⌘ + .                 |
+| ←         | Left Half                   | ⌃⌥⌘ + ,                 |
 
 ## S → System
-| Tecla     | Descripción                  | Atajo                    |
-|-----------|------------------------------|--------------------------|
-| U         | Subir Volumen               | Volume Up               |
-| J         | Bajar Volumen               | Volume Down             |
-| I         | Subir Brillo                | Brightness Up           |
-| K         | Bajar Brillo                | Brightness Down         |
-| L         | Bloquear Pantalla           | ⌃⌘ + Q                  |
-| P         | Play/Pause                  | Play/Pause             |
-| ;         | Avance Rápido               | Fast Forward           |
-| D         | No Molestar                 | ⌃⌥ + D                  |
-| T         | Cambiar Tema                | ⌃⌥ + T                  |
-| C         | Abrir Cámara                | ⌃⌥ + C                  |
+| Key       | Description                 | Shortcut                |
+|-----------|-----------------------------|-------------------------|
+| U         | Volume Up                   | Volume Up               |
+| J         | Volume Down                 | Volume Down             |
+| I         | Brightness Up               | Brightness Up           |
+| K         | Brightness Down             | Brightness Down         |
+| L         | Lock Screen                 | ⌃⌘ + Q                  |
+| P         | Play/Pause                  | Play/Pause              |
+| ;         | Fast Forward                | Fast Forward            |
+| D         | Do Not Disturb Toggle       | ⌃⌥ + D                  |
+| T         | Toggle Theme                | ⌃⌥ + T                  |
+| C         | Open Camera                 | ⌃⌥ + C                  |
 
 ## C → Music
-| Tecla     | Descripción                  | Atajo                    |
-|-----------|------------------------------|--------------------------|
-| P         | Play/Pause                  | Play/Pause             |
-| N         | Siguiente                   | Fast Forward           |
-| B         | Anterior                    | Rewind                 |
+| Key       | Description                 | Shortcut                |
+|-----------|-----------------------------|-------------------------|
+| P         | Play/Pause                  | Play/Pause              |
+| N         | Fast Forward                | Fast Forward            |
+| B         | Rewind                      | Rewind                  |
 
 ## R → Raycast
-| Tecla     | Descripción                  | Atajo                    |
-|-----------|------------------------------|--------------------------|
+| Key       | Description                 | Shortcut                |
+|-----------|-----------------------------|-------------------------|
 | C         | Confetti                    | ⌃⌥ + M                  |
-| X/G       | Búsqueda de GIFs           | ⌃⌥ + N                  |
-| E         | Búsqueda de Emojis         | ⌃⌥ + E                  |
-| A         | Chat con IA                 | ⌃⌥ + A                  |
-| H         | Historial del Portapapeles  | ⌃⌥ + H                  |
-| F         | Abrir Carpeta Descargas     | ⌘⌥ + D                  |
-| 1         | Conectar Dispositivo 1      | ⌃⌥ + 1                  |
-| 2         | Conectar Dispositivo 2      | ⌃⌥ + 2                  |
+| X/G       | GIF Search                  | ⌃⌥ + N                  |
+| E         | Emoji Search                | ⌃⌥ + E                  |
+| A         | AI Chat                     | ⌃⌥ + A                  |
+| H         | Clipboard History           | ⌃⌥ + H                  |
+| F         | Open Downloads Folder       | ⌘⌥ + D                  |
+| 1         | Connect Device 1            | ⌃⌥ + 1                  |
+| 2         | Connect Device 2            | ⌃⌥ + 2                  |
