@@ -1,111 +1,110 @@
-Aquí tienes la leyenda en formato Markdown, lista para ser guardada en un archivo `.md`. Puedes copiar el contenido directamente en un archivo con la extensión `.md` (por ejemplo, `keybindings.md`).
+# Guía de Atajos de Teclado
 
-```markdown
-# W → Windows Management
+## SPACEBAR
+| Tecla     | Descripción            | Atajo                    |
+|-----------|------------------------|--------------------------|
+| SPACEBAR  | Quick Action           | ⌘⌃ + P                  |
 
--   h → Hide the current application
--   q → 
-  - → Navigate to the previous tab
--   ← → Navigate to the next tab
--   spacebar → Switch to the next window of the same application
--   s → 
-  - → Move to the next space
-  - ← Move to the previous space
--   d → 
-  - → Move to the next display
-  - ← Move to the previous display
--   e → 
-  - → Adjust width to the right
-  - ← Adjust width to the left
--   ↑ → Adjust window to the top half
--   ↓ → Adjust window to the bottom half
--   → → Adjust window to the right half
--   ← → Adjust window to the left half
+## B → Brave/Browse
+| Tecla     | Descripción                  | Atajo                    |
+|-----------|------------------------------|--------------------------|
+| SPACEBAR  | Abrir PD Paola              | pdpaola.com             |
+| L         | Abrir Looker                | pdpaola.cloud.looker.com|
+| M         | Abrir Gmail                 | mail.google.com         |
+| X         | Abrir X (Twitter)           | x.com                   |
 
-# B → Brave / Browse
+## J → Jira
+| Tecla     | Descripción                  | Atajo                    |
+|-----------|------------------------------|--------------------------|
+| SPACEBAR  | Mis Filtros                 | Raycast Jira Filters    |
+| A         | All ITPs                    | ITP Board               |
+| S         | Support Tickets             | IT Service Desk         |
+| D         | Development                 | Discovery View          |
+| Q         | BAB Board                   | BAB Jira Board         |
+| W         | COM Board                   | COM Jira Board         |
+| E         | DAT Board                   | DAT Jira Board         |
+| V         | Ver Ticket                  | ⌘⌥ + V                  |
 
--   spacebar → Open website pdpaola.com
--   l → Open Looker dashboard
--   m → Open Gmail
--   x → Open Twitter
--   d → Command + Option + D
+## A → Applications
+| Tecla     | Descripción                  | Atajo                    |
+|-----------|------------------------------|--------------------------|
+| SPACEBAR  | Cambiar Aplicación          | ⌘⌥ + Tab                |
+| B         | Brave Browser               | Abrir Brave             |
+| C         | Notion Calendar             | Abrir Calendar          |
+| D         | Discord                     | Abrir Discord           |
+| F         | Finder                      | Abrir Finder            |
+| M         | Music                       | Abrir Music             |
+| N         | Notion                      | Abrir Notion            |
+| 1         | 1Password                   | Abrir 1Password         |
+| S         | Slack                       | Abrir Slack             |
+| T         | Terminal                    | Abrir Terminal          |
+| V         | Cursor                      | Abrir Cursor            |
+| W         | WhatsApp                    | Abrir WhatsApp          |
+| I         | Quick Action                | ⌃⌘ + I                  |
 
-# J → Jira
+## N → Notion
+| Tecla     | Descripción                  | Atajo                    |
+|-----------|------------------------------|--------------------------|
+| Q         | BAB                         | Babylon Page            |
+| W         | COM                         | Ecommerce Page          |
+| E         | DAT                         | Data Page               |
+| R         | SYS                         | Sysadmin Page           |
+| A         | CEO                         | CEO Page                |
+| S         | TODOs                       | TODOs Page              |
+| D         | Dashboard                   | Control Center          |
+| I         | Add to To Do List          | ⌘⌥ + I                  |
+| O         | Add to Read Later           | ⌘⌥ + O                  |
+| K         | Add to To Do List          | ⌘⌥ + K                  |
+| L         | Add to Read Later           | ⌘⌥ + L                  |
 
--   spacebar → Open my filters in Jira
--   a → Open ITP ideas
--   s → Open Support Tickets
--   d → Open Development dashboard
--   q → Open BAB project
--   w → Open COM project
--   e → Open DAT project
--   v → Command + Option + V
+## W → Windows Management
+| Tecla     | Descripción                  | Atajo                    |
+|-----------|------------------------------|--------------------------|
+| H         | Ocultar Aplicación          | ⌘ + H                   |
+| F         | Pantalla Completa           | ⌃⌥ + F                  |
+| Q + ←     | Pestaña Anterior            | ⌃⇧ + Tab                |
+| Q + →     | Pestaña Siguiente           | ⌃ + Tab                 |
+| SPACEBAR  | Siguiente Ventana           | ⌃ + ↓                   |
+| S + →     | Espacio Siguiente           | ⌃⌥⌘ + P                 |
+| S + ←     | Espacio Anterior            | ⌃⌥⌘ + O                 |
+| D + →     | Pantalla Siguiente          | ⌃⌥⌘ + I                 |
+| D + ←     | Pantalla Anterior           | ⌃⌥⌘ + U                 |
+| E + →     | Ancho Elástico (Derecha)    | ⌃⌥⌘ + B                 |
+| E + ←     | Ancho Elástico (Izquierda)  | ⌃⌥⌘ + V                 |
+| ↑         | Mitad Superior              | ⌃⌥⌘ + M                 |
+| ↓         | Mitad Inferior              | ⌃⌥⌘ + N                 |
+| →         | Mitad Derecha               | ⌃⌥⌘ + .                 |
+| ←         | Mitad Izquierda             | ⌃⌥⌘ + ,                 |
 
-# A → Open Applications
+## S → System
+| Tecla     | Descripción                  | Atajo                    |
+|-----------|------------------------------|--------------------------|
+| U         | Subir Volumen               | Volume Up               |
+| J         | Bajar Volumen               | Volume Down             |
+| I         | Subir Brillo                | Brightness Up           |
+| K         | Bajar Brillo                | Brightness Down         |
+| L         | Bloquear Pantalla           | ⌃⌘ + Q                  |
+| P         | Play/Pause                  | Play/Pause             |
+| ;         | Avance Rápido               | Fast Forward           |
+| D         | No Molestar                 | ⌃⌥ + D                  |
+| T         | Cambiar Tema                | ⌃⌥ + T                  |
+| C         | Abrir Cámara                | ⌃⌥ + C                  |
 
--   spacebar → Command + Option + Tab
--   b → Open Brave Browser
--   c → Open Notion Calendar
--   d → Open Discord
--   f → Open Finder
--   m → Open Music
--   n → Open Notion
--   1 → Open 1Password
--   s → Open Slack
--   t → Open Terminal
--   v → Open Visual Studio Code
--   w → Open WhatsApp
--   i → Command + Control + I
+## C → Music
+| Tecla     | Descripción                  | Atajo                    |
+|-----------|------------------------------|--------------------------|
+| P         | Play/Pause                  | Play/Pause             |
+| N         | Siguiente                   | Fast Forward           |
+| B         | Anterior                    | Rewind                 |
 
-# N → Notion
-
--   spacebar → Open Notion quick search
--   q → Open BAB follow-up page
--   w → Open COM follow-up page
--   e → Open DAT follow-up page
--   r → Open SYS follow-up page
--   a → Open CEO page
--   s → Open TODOs page
--   d → Open Dashboard
--   i → Command + Option + I (Add to To Do List)
--   o → Command + Option + O (Add to Read Later List)
--   k → Command + Option + K (Add to To Do List)
--   l → Command + Option + L (Add to Read Later List)
-
-# S → System
-
--   u → Volume increment
--   j → Volume decrement
--   i → Brightness increment
--   k → Brightness decrement
--   l → Command + Control + Q
--   p → Play or pause
--   semicolon → Fast forward
--   d → Toggle Do Not Disturb
--   t → Toggle system appearance
--   c → Open camera
--   v → Option + Spacebar
-
-# C → Music Controls
-
--   p → Play or pause
--   n → Fast forward
--   b → Rewind
-
-# R → Raycast
-
--   c → Command + Option + M
--   x → Command + Option + N
--   g → Open GIF search
--   e → Open emoji symbols
--   p → Open Raycast confetti
--   a → Open Raycast AI chat
--   h → Open clipboard history
--   s → Open silent mention
--   n → Dismiss notifications
--   1 → Connect favorite device 1
--   2 → Connect favorite device 2
-```
-
-Guarda este contenido en un archivo con la extensión `.md`, y podrás visualizarlo correctamente en cualquier editor de Markdown.
-
+## R → Raycast
+| Tecla     | Descripción                  | Atajo                    |
+|-----------|------------------------------|--------------------------|
+| C         | Confetti                    | ⌃⌥ + M                  |
+| X/G       | Búsqueda de GIFs           | ⌃⌥ + N                  |
+| E         | Búsqueda de Emojis         | ⌃⌥ + E                  |
+| A         | Chat con IA                 | ⌃⌥ + A                  |
+| H         | Historial del Portapapeles  | ⌃⌥ + H                  |
+| F         | Abrir Carpeta Descargas     | ⌘⌥ + D                  |
+| 1         | Conectar Dispositivo 1      | ⌃⌥ + 1                  |
+| 2         | Conectar Dispositivo 2      | ⌃⌥ + 2                  |
