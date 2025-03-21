@@ -122,7 +122,7 @@ const rules: KarabinerRules[] = [
       //      },
     ],
   },
-  
+
   ...createHyperSubLayers({
     spacebar: open("notion://www.notion.so/jriera/Jabel-s-Keyboard-Shortcuts-1a89bb54bc03807baef5eff5543e4e2d"),
 
@@ -164,17 +164,13 @@ const rules: KarabinerRules[] = [
     j: {
       spacebar: open("raycast://extensions/thomaslombart/jira/my-filters"),
 
-      // All ITPs
-      a: open(
-        "https://pdpaola.atlassian.net/jira/polaris/projects/ITP/ideas/view/3404380"
-      ),
       // Support Tickets
       s: open(
         "https://pdpaola.atlassian.net/jira/servicedesk/projects/IT/queues/custom/163"
       ),
       // Developement
       d: open(
-        "https://pdpaola.atlassian.net/jira/discovery/share/views/699ad107-2f28-4bf6-a78b-51008adfeecc"
+        "https://pdpaola.atlassian.net/jira/polaris/projects/ITP/ideas/view/3404380"
       ),
 
       // Ordered from left to right (Q, W, E), the three Jira Software IT projects
@@ -292,7 +288,7 @@ const rules: KarabinerRules[] = [
       },
 
       k: {
-        description: "Manually add to To Do List",
+        description: "Automatically add to To Do List",
         to: [
           {
             key_code: "k",
@@ -302,7 +298,7 @@ const rules: KarabinerRules[] = [
       },
 
       l: {
-        description: "Manually add to Read Later List",
+        description: "Automatically add to Read Later List",
         to: [
           {
             key_code: "l",
@@ -647,7 +643,7 @@ const rules: KarabinerRules[] = [
         description: "Gif Search",
         to: [
           {
-            key_code: "n",
+            key_code: "g",
             modifiers: ["left_control", "left_option"],
           },
         ],
