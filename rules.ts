@@ -98,28 +98,39 @@ const rules: KarabinerRules[] = [
             },
           },
         ],
-        to_if_alone: [
+        type: "basic",
+      },
+    ],
+  },
+
+  // ---------------------------------------------------------------- //
+  //      CAPS LOCK
+  // ---------------------------------------------------------------- //
+  {
+    description: "Caps Lock",
+    manipulators: [
+      {
+        description: "Hyper + M -> Caps Lock",
+        from: {
+          key_code: "m",
+          modifiers: {
+            optional: ["any"],
+          },
+        },
+        to: [
           {
-            key_code: "escape",
+            key_code: "caps_lock",
           },
         ],
         type: "basic",
+        conditions: [
+          {
+            type: "variable_if",
+            name: "hyper",
+            value: 1,
+          },
+        ],
       },
-      //      {
-      //        type: "basic",
-      //        description: "Disable CMD + Tab to force Hyper Key usage",
-      //        from: {
-      //          key_code: "tab",
-      //          modifiers: {
-      //            mandatory: ["left_command"],
-      //          },
-      //        },
-      //        to: [
-      //          {
-      //            key_code: "tab",
-      //          },
-      //        ],
-      //      },
     ],
   },
 
