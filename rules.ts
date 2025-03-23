@@ -110,9 +110,9 @@ const rules: KarabinerRules[] = [
     description: "Caps Lock",
     manipulators: [
       {
-        description: "Hyper + M -> Caps Lock",
+        description: "Hyper + TAB -> Caps Lock",
         from: {
-          key_code: "m",
+          key_code: "tab",
           modifiers: {
             optional: ["any"],
           },
