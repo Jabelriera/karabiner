@@ -368,10 +368,10 @@ const rules: KarabinerRules[] = [
       },
 
       spacebar: {
-        description: "Next Window from the same Application",
+        description: "All Windows",
         to: [
           {
-            key_code: "down_arrow",
+            key_code: "up_arrow",
             modifiers: ["left_control"],
           },
         ],
