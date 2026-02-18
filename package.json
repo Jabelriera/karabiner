@@ -6,7 +6,7 @@
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^18.7.19",
-    "nodemon": "^2.0.20",
+    "nodemon": "^3.1.11",
     "prettier": "^2.7.1",
     "tsm": "^2.2.2"
   },

@@ -157,6 +157,7 @@ const rules: KarabinerRules[] = [
       ],
     }, 
 
+
     // ---------------------------------------------------------------- //
     // B = Brave / Browse
     // ---------------------------------------------------------------- //
@@ -224,7 +225,7 @@ const rules: KarabinerRules[] = [
       c: app("Notion Calendar"),
       d: app("Discord"),
       f: app("Finder"),
-      m: app("Music"),
+      m: app("Notion Mail"),
       n: app("Notion"),
       1: app("1Password"),
       s: app("Slack"),
@@ -275,7 +276,7 @@ const rules: KarabinerRules[] = [
       ),
 
       // ---------------- //
-      // Add to Databases //
+      // Add to Notion DB //
       // ---------------- //
 
       i: {
@@ -341,6 +342,25 @@ const rules: KarabinerRules[] = [
           {
             key_code: "f",
             modifiers: ["left_control", "left_option"],
+          },
+        ],
+      },
+
+      c: {
+        description: "Center Window",
+        to: [
+          {
+            key_code: "c",
+            modifiers: ["left_control", "left_option", "left_command"],
+          },
+        ],
+      },
+
+      e: {
+        description: "Mission Control",
+        to: [
+          {
+            key_code: "mission_control"
           },
         ],
       },
@@ -419,7 +439,7 @@ const rules: KarabinerRules[] = [
         },
       },
 
-      e: {
+      a: {
         right_arrow: {
           description: "Elastic Width (Right)",
           to: [
@@ -594,9 +614,11 @@ const rules: KarabinerRules[] = [
     },
 
     // ---------------------------------------------------------------- //
-    // C = Music
+    // V = Music
     // ---------------------------------------------------------------- //
-    c: {
+
+    v: {
+      m: app("Music"),
       p: {
         description: "Play/Pause",
         to: [
@@ -626,12 +648,46 @@ const rules: KarabinerRules[] = [
     },
 
     // ---------------------------------------------------------------- //
+    // C = CleanShot
+    // ---------------------------------------------------------------- //
+
+    c: {
+      spacebar: {
+        description: "Toogle Capture",
+        to: [
+          {
+            key_code: "4",
+            modifiers: ["left_command", "left_shift"],
+          },
+        ],
+      },
+      x: {
+        description: "Screenshot History",
+        to: [
+          {
+            key_code: "y",
+            modifiers: ["left_control", "left_option"],
+          },
+        ],
+      },
+      f: {
+        description: "Screenshot Folder",
+        to: [
+          {
+            key_code: "y",
+            modifiers: ["left_control", "left_command"],
+          },
+        ],
+      },
+    },
+
+    // ---------------------------------------------------------------- //
     // R = Raycast
     // ---------------------------------------------------------------- //
 
     r: {
       c: {
-        description: "Confetti",
+        description: "Confetti Effect",
         to: [
           {
             key_code: "m",
@@ -733,7 +789,7 @@ fs.writeFileSync(
       },
       profiles: [
         {
-          name: "Jabel",
+          name: "Jabel v1.1",
           keyboard_type: "iso",
           selected: true,
           virtual_hid_keyboard: {
@@ -750,3 +806,4 @@ fs.writeFileSync(
     2
   )
 );
+
