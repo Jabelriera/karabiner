@@ -228,6 +228,7 @@ const rules: KarabinerRules[] = [
       m: app("Notion Mail"),
       n: app("Notion"),
       1: app("1Password"),
+      r: app("Roon"),
       s: app("Slack"),
       t: app("Terminal"),
       v: app("Cursor"), // Visual Studio Code
@@ -235,8 +236,8 @@ const rules: KarabinerRules[] = [
       i: {
         to: [
           {
-            key_code: "i",
-            modifiers: ["left_control", "left_command"],
+            key_code: "spacebar",
+            modifiers: ["left_option"],
           },
         ],
       },
@@ -606,8 +607,8 @@ const rules: KarabinerRules[] = [
         description: "Open Camera",
         to: [
           {
-            key_code: "c",
-            modifiers: ["left_control", "left_option"],
+            key_code: "9",
+            modifiers: ["left_control", "left_option","left_command"],
           },
         ],
       },
