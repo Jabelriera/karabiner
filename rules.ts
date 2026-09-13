@@ -162,10 +162,12 @@ const rules: KarabinerRules[] = [
     // B = Brave / Browse
     // ---------------------------------------------------------------- //
 
-    b: {
+    f: {
       spacebar: open("https://pdpaola.com"),
       l: open("https://pdpaola.cloud.looker.com"),
       m: open("https://mail.google.com"),
+      c: open("https://calendar.google.com"),
+      g: open("https://gemini.google.com"),
       x: open("https://x.com"),
     },
 
@@ -221,7 +223,7 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
-      b: app("Brave Browser"),
+      b: app("Firefox Developer Edition"),
       c: app("Notion Calendar"),
       d: app("Discord"),
       f: app("Finder"),
@@ -231,13 +233,13 @@ const rules: KarabinerRules[] = [
       r: app("Roon"),
       s: app("Slack"),
       t: app("Terminal"),
-      v: app("Cursor"), // Visual Studio Code
+      v: app("Cursor"),
       w: app("Whatsapp"),
       i: {
         to: [
           {
-            key_code: "spacebar",
-            modifiers: ["left_option"],
+            key_code: "i",
+            modifiers: ["left_command", "left_shift"],
           },
         ],
       },
@@ -253,21 +255,8 @@ const rules: KarabinerRules[] = [
       // Follow-up Pages  //
       // ---------------- //
 
-      q: /*  BAB  */ open(
-        "notion://www.notion.so/jriera/Babylon-5286b76c5f814b5e80018c9c2f1746e5?pvs=25"
-      ),
-      w: /*  COM  */ open(
-        "notion://www.notion.so/jriera/Ecommerce-4d14585900d14482a6663b38e24c1460?pvs=25"
-      ),
-      e: /*  DAT  */ open(
-        "notion://www.notion.so/jriera/Data-9b10c993633f4932a95742f484e96a5d?pvs=25"
-      ),
-      r: /*  SYS  */ open(
-        "notion://www.notion.so/jriera/Sysadmin-4afef3fe2fdb4e58ad32d0bfe6c06195?pvs=25"
-      ),
-
-      a: /*  CEO  */ open(
-        "notion://www.notion.so/jriera/Humbert-421761737c744a8e95065153c18fed63?pvs=4"
+      a: /*  Notes Temporals  */ open(
+        "notion://www.notion.so/jriera/Notes-Temporals-21f9bb54bc0380379531cf7e5da4095a"
       ),
       s: /* TODOs */ open(
         "notion://www.notion.so/jriera/19e9bb54bc0380d7bf9ee11350cc13d7?v=19e9bb54bc0380c4899d000c6d019498&pvs=4"
@@ -500,18 +489,6 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
-
-      // Corners
-      /*
-      up_arrow: {
-        left_arrow: { to: [{ key_code: "t", modifiers: ["left_control","left_option","left_command"] }] },
-        right_arrow: { to: [{ key_code: "y", modifiers: ["left_control","left_option","left_command"] }] },
-      },
-      down_arrow: {
-        left_arrow: { to: [{ key_code: "g", modifiers: ["left_control","left_option","left_command"] }] },
-        right_arrow: { to: [{ key_code: "h", modifiers: ["left_control","left_option","left_command"] }] },
-      },
-      */
     },
 
     // ---------------------------------------------------------------- //
